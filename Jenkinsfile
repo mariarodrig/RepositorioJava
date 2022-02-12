@@ -9,7 +9,7 @@ pipeline {
 
     stage('crear carpeta') {
       steps {
-        bat 'Documentos/crearCarpeta.BAT'
+        bat 'Documentos\\crearCarpeta.BAT'
       }
     }
 
