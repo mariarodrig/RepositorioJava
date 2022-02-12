@@ -1,25 +1,6 @@
 pipeline {
   agent any
   stages {
-    stage('verificacion de version') {
-      parallel {
-        stage('verificacion de version') {
-          steps {
-            sh '''mvn --version
-git --version
-java --version'''
-          }
-        }
-
-        stage('verificacion pom') {
-          steps {
-            fileExists 'pom.xml'
-          }
-        }
-
-      }
-    }
-
     stage('empaquetado war') {
       steps {
         build 'Proyecto-maven'
