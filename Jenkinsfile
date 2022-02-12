@@ -9,7 +9,7 @@ pipeline {
 
     stage('crear carpeta') {
       steps {
-        bat(script: 'carpetita', encoding: 'cd C:\\ProgramData\\Jenkins\\.jenkins\\workspace  IF exist empaquetado/nul ( echo empaquetado ya existe ) ELSE ( mkdir empaquetado && echo empaquetado creada)')
+        bat 'Documentos/crearCarpeta.BAT'
       }
     }
 
