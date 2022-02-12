@@ -16,8 +16,7 @@ pipeline {
 
     stage('mover archivo war') {
       steps {
-        bat 'cd C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Proyecto-maven\\PruebaDePruebas\\target'
-        bat 'MOVE "PruebaDePruebas-1.0-SNAPSHOT.war" "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\empaquetado"'
+        bat 'MOVE "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Proyecto-maven\\PruebaDePruebas\\target\\PruebaDePruebas-1.0-SNAPSHOT.war" "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\empaquetado"'
       }
     }
 
